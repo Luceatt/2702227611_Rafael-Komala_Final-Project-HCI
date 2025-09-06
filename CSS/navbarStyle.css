@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Noto Sans");
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Noto Sans";
+    min-height: 100vh;
+    background-color: #1D1340;
+}
+
+.logo{
+    height: 60px;
+    padding: 10px 60px;
+}
+
+nav{
+    background: black;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    margin-right: 60px;
+}
+
+.nav-links li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 20px;
+    position: relative;
+}
+
+.nav-links li a {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-links li a.active, 
+.nav-links li a:hover {
+    color: #445EF2;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 105%;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #445EF2;
+    transition: .3s;
+}
+
+.navbar a:hover::before,
+.navbar a.active::before {
+    width: 100%;
+}
+
+.checkbutton{
+    font-size: 30px;
+    color: white;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 60px;
+}
+
+.menu-toggle .bar {
+    height: 2px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background: black;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+.footer {
+    height: 110px;
+    width: 100%;
+    background-color: #1D1340;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 12px;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-logo {
+    width: 70px;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+.footer-links, .footer-credits {
+    margin: 5px 0;
+}
