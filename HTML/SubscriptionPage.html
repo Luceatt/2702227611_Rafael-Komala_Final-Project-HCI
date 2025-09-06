@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription</title>
+    <link rel="stylesheet" href="/CSS/navbarStyle.css">
+    <link rel="stylesheet" href="/CSS/subscriptionStyle.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="/Assets/LogoWhite.png" alt="White ASPHATL Logo" class="logo">
+
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+            
+        <ul class="nav-links">
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="ProductPage.html">Products</a></li>
+            <li><a href="NewsPage.html">News</a></li>
+            <li><a href="EsportPage.html">Esport Event</a></li>
+            <li><a class="active" href="SubscriptionPage.html">Subscription</a></li>
+        </ul>
+    </nav>
+
+    <div class="subscription-container">
+        <div class="subscription-frame" id="frame-1">
+            <h2>Select Your Role:</h2>
+            <div class="buttons">
+                <button class="role-button selected" id="creator-button">Content Creator</button>
+                <button class="role-button" id="viewer-button">Viewer</button>
+            </div>
+        </div>
+
+        <div class="subscription-frame" id="frame-2">
+            <img src="/Assets/BackWhite.png" alt="Back Icon" id="back-icon">
+            <h2 id="role-title">Content Creator</h2>
+            <form id="subscription-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name..">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Google account email...">
+
+                <label>Date of Birth:</label>
+                <div class="dob-inputs">
+                    <input type="number" id="day" name="day" placeholder="dd" min="1" max="31">
+                    <input type="number" id="month" name="month" placeholder="mm" min="1" max="12">
+                    <input type="number" id="year" name="year" placeholder="yyyy" min="1900" max="2024">
+                </div>
+
+                <label>Gender:</label>
+                <div class="gender-inputs">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+
+                <div class="terms">
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">I agree to the terms and conditions</label>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="subscription-frame" id="frame-3">
+            <div class="confirmation-container">
+                <img src="/Assets/LogoBlue.png" alt="LogoBlue" class="confirmation-logo">
+                <p>Have you checked your personal information?</p>
+                <p>Are you sure you want to submit?</p>
+                <div class="confirmation-buttons">
+                    <button id="confirm-yes">Yes</button>
+                    <button id="confirm-no" class="no-button">No</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="subscription-frame" id="frame-4">
+            <div class="success-container">
+                <img src="/Assets/SuccessIcon.png" alt="SuccessIcon" class="success-icon">
+                <p>Subscription successful!</p>
+                <p>Welcome to Asphatl 9: ReJends.</p>
+                <button id="success-okay">Okay</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="/Assets/LogoWhite.png" alt="White ASPHATL Logo" class="footer-logo">
+            <p class="footer-links">Terms of Service | Privacy Policy</p>
+            <p class="footer-credits">©Gamefolt | @RJStudio</p>
+        </div>
+    </footer>
+
+    <script src="/JavaScript/subscriptionPage.js"></script>
+    <script src="/JavaScript/navbarScript.js"></script>
+</body>
+</html>

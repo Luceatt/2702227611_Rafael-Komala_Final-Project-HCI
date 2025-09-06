@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esport Event</title>
+    <link rel="stylesheet" href="/CSS/navbarStyle.css">
+    <link rel="stylesheet" href="/CSS/esportStyle.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="/Assets/LogoWhite.png" alt="White ASPHATL Logo" class="logo">
+
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+            
+        <ul class="nav-links">
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="ProductPage.html">Products</a></li>
+            <li><a href="NewsPage.html">News</a></li>
+            <li><a class="active"  href="EsportPage.html">Esport Event</a></li>
+            <li><a href="SubscriptionPage.html">Subscription</a></li>
+        </ul>
+    </nav>
+
+    <section class="esport-event">
+        <div class="video-container">
+            <video src="/Assets/BrazilTournament.mp4" autoplay muted loop></video>
+        </div>
+        <div class="esport-insights">
+            <div class="insight-box">
+                <img src="/Assets/EventIcon.png" alt="Event Icon">
+                <div class="insight-text">
+                    <p class="data">32 Events</p>
+                    <p class="details">In past 7 years</p>
+                </div>
+            </div>
+            <div class="insight-box">
+                <img src="/Assets/ParticipantsIcon.png" alt="Participants Icon">
+                <div class="insight-text">
+                    <p class="data">1,890,000</p>
+                    <p class="details">Participants</p>
+                </div>
+            </div>
+            <div class="insight-box">
+                <img src="/Assets/PrizesIcon.png" alt="Prizes Icon">
+                <div class="insight-text">
+                    <p class="data">$291500+</p>
+                    <p class="details">Total Prizes</p>
+                </div>
+            </div>
+            <div class="insight-box">
+                <img src="/Assets/RacesIcon.png" alt="Races Icon">
+                <div class="insight-text">
+                    <p class="data">44,842,000</p>
+                    <p class="details">Total Races</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sponsor-section">
+        <h2>Event Sponsors</h2>
+        <div class="sponsor-underline"></div>
+        <div class="sponsor-frame" id="frame-1">
+            <img src="/Assets/Sponsor1.png" alt="Sponsor 1" class="sponsor-logo">
+            <img src="/Assets/Sponsor2.png" alt="Sponsor 2" class="sponsor-logo">
+            <img src="/Assets/Sponsor3.png" alt="Sponsor 3" class="sponsor-logo">
+            <img src="/Assets/Sponsor4.png" alt="Sponsor 4" class="sponsor-logo">
+            <img src="/Assets/Next.png" alt="Next" class="nav-button next" onclick="showFrame(2)">
+        </div>
+        <div class="sponsor-frame" id="frame-2">
+            <img src="/Assets/Previous.png" alt="Previous" class="nav-button previous" onclick="showFrame(1)">
+            <img src="/Assets/Sponsor5.png" alt="Sponsor 5" class="sponsor-logo">
+            <img src="/Assets/Sponsor6.png" alt="Sponsor 6" class="sponsor-logo">
+            <img src="/Assets/Sponsor7.png" alt="Sponsor 7" class="sponsor-logo">
+            <img src="/Assets/Sponsor8.png" alt="Sponsor 8" class="sponsor-logo">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="/Assets/LogoWhite.png" alt="White ASPHATL Logo" class="footer-logo">
+            <p class="footer-links">Terms of Service | Privacy Policy</p>
+            <p class="footer-credits">©Gamefolt | @RJStudio</p>
+        </div>
+    </footer>
+
+    <script src="/JavaScript/esportPage.js"></script>
+    <script src="/JavaScript/navbarScript.js"></script>
+</body>
+</html>
