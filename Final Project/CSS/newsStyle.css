@@ -1,0 +1,136 @@
+body{
+    background-image: url('/Assets/BackgroundNews.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.news-header {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.news-title {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.news-underline {
+    width: 325px;
+    height: 2px;
+    background-color: #445EF2;
+    margin: 0 auto; 
+    margin-top: 5px;
+}
+
+.wrapper {
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto; 
+    width: calc(100% - 200px);
+    margin-left: 100px;
+    cursor: grab; 
+    -webkit-overflow-scrolling: touch;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-item {
+    width: 400px;
+    height: 520px;
+    background-image: url('/Assets/CarouselBackground.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: left;
+    margin-top: 40px;
+    margin-right: 40px;
+    padding: 40px;
+    border-radius: 15px;
+    position: relative;
+    flex-shrink: 0;
+    transition: color 0.3s;
+}
+
+.carousel-item:last-child {
+    margin-right: 0;
+}
+
+.carousel-item img {
+    width: 360px;
+    height: 240px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.carousel-item .text-container {
+    padding: 15px 0;    
+}
+
+.carousel-item .newsTitle {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.carousel-item .details {
+    position: absolute; 
+    bottom: 40px; 
+    left: 40px; 
+    display: flex; 
+    align-items: center; 
+    color: white; 
+    font-size: 18px;
+}
+
+.carousel-item .date {
+    margin: 0; 
+    flex: 1;
+}
+
+.carousel-item .duration {
+    margin: 0; 
+    margin-left: 12px; 
+}
+
+.carousel-item .clock-icon {
+    width: 20px;
+    height: auto;
+    margin-left: 40px;
+}
+
+.carousel-item:hover .newsTitle{
+    color: #445EF2;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel{
+        width: calc(100% - 40px);
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .news-underline {
+        width: 205px;
+        height: 2px;
+        background-color: #445EF2;
+        margin: 0 auto; 
+        margin-top: 5px;
+    }
+
+    .carousel{
+        width: calc(100% - 35px);
+        margin-left: 20px;
+    }
+}
